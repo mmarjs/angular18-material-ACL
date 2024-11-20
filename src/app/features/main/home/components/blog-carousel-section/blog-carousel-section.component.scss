@@ -1,0 +1,298 @@
+.blog-carousel-section {
+    padding: 0px;
+    background-color: #F2F2F2;
+    @media (min-width: 992px) {
+        border-top: solid 1px #D1D1D1;
+        padding: 80px 80px 40px;
+    }
+    .blog-carousel-card {
+        background-color: #fff;
+        border-radius: 0px;
+        padding: 100px 0 50px;
+        box-shadow: none;
+        @media (min-width: 992px) {
+            border-radius: 14px;
+            padding: 100px 0;
+        }
+        .block-title {
+            color: #E8272F;
+            font-weight: bold;
+        }
+        .blogs-block {
+            h2 {
+                font-family: Montserrat;
+                font-size: 44px;
+                font-weight: 900;
+                line-height: 38px;
+                letter-spacing: -0.06em;
+                text-align: center;
+                @media (min-width: 992px) {
+                    text-align: left;
+                }
+            }
+            .btn-all-posts {
+                width: 220px;
+                height: 40px;
+                border-radius: 40px;
+                border: none;
+                outline: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #E8272F;
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17.07px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                @media (min-width: 992px) {
+                    margin-right: 0;
+                }
+                .mat-icon {
+                    font-size: 20px;
+                    margin-top: 2px;
+                }
+            }
+            .divider {
+                border-top: solid 1px #D1D1D1;
+            }
+            .block-title {
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: 900;
+                line-height: 38px;
+                letter-spacing: -0.06em;
+                text-align: left;
+            }
+            .block-body {
+                transform: translateX(14px);
+                @media (min-width: 992px) {
+                    transform: translateX(0px);
+                }
+                .blog-carousel {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    overflow: hidden;
+                    .blog-card {
+                        width: 220px;
+                        min-width: 220px;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        margin-left: 20px;
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                        .blog-card-img {
+                            width: 100%;
+                        }
+                        .blog-card-content {
+                            padding: 10px;
+                            .timestamp {
+                                font-size: 12px;
+                                color: #D1D1D1;
+                                margin-bottom: 5px;
+                            }
+                            .title {
+                                font-size: 12px;
+                                font-weight: 800;
+                                min-height: 54px;
+                                height: 54px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .blog-card-footer {
+                            padding: 10px;
+                            .btn-read-more {
+                                width: 120px;
+                                height: 30px;
+                                border-radius: 30px;
+                                border: none;
+                                outline: none;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: #E8272F;
+                                color: #fff;
+                                font-family: Montserrat;
+                                font-size: 12px;
+                                font-weight: 700;
+                                line-height: 14.63px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .news-block {
+            max-width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            padding: 0 14px;
+            @media (min-width: 992px) {
+                margin-left: 0;
+                margin-right: auto;
+                margin-bottom: 0px;
+                padding: 0px;
+            }
+            .news-items {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                width: auto;
+                max-width: max-content;
+                .news-item {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px 0;
+                    border-top: solid 1px #D1D1D1;
+                    &:last-child {
+                        border-bottom: solid 1px #D1D1D1;
+                    }
+                    .news-img {
+                        width: 66px;
+                        height: 66px;
+                    }
+                    .news-text {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 20px;
+                        font-size: 14px;
+                    }
+                }
+                .btn-view-all {
+                    width: 100px;
+                    height: 30px;
+                    border-radius: 30px;
+                    border: solid 2px #E8272F;
+                    padding: 0;
+                    opacity: 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: Montserrat;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 14.63px;
+                    text-align: center;
+                    color: #E8272F;
+                }
+                .btn-all-posts {
+                    width: 220px;
+                    height: 40px;
+                    border-radius: 40px;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #E8272F;
+                    color: #fff;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 17.07px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                    @media (min-width: 992px) {
+                        margin-right: 0;
+                    }
+                    .mat-icon {
+                        font-size: 20px;
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+        .video-block {
+            display: flex;
+            flex-direction: column;
+            max-width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translateX(14px);
+            @media (min-width: 992px) {
+                margin-left: auto;
+                margin-right: 0;
+                transform: translateX(0px);
+            }
+            .btn-yt-play {
+                display: flex;
+                align-items: center;
+                color: #121212;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.63px;
+                text-align: center;
+                transform: translateX(-14px);
+                @media (min-width: 992px) {
+                    margin-left: auto;
+                    margin-right: 0;
+                    transform: translateX(0px);
+                }
+                img {
+                    width: 29px;
+                    height: 20px;
+                    margin-right: 5px;
+                }
+            }
+            .video-items {
+                list-style: none;
+                margin: 0;
+                padding: 0px;
+                display: flex;
+                flex-direction: row;
+                width: auto;
+                max-width: 475px;
+                overflow: auto;
+                .video-item {
+                    display: flex;
+                    flex-direction: column;
+                    @media (min-width: 992px) {
+                        width: 230px;
+                        min-width: 230px;
+                    }
+                    .video-img {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    .video-text {
+                        display: flex;
+                        flex-direction: column;
+                        strong {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .btn-watch {
+                width: 172px;
+                height: 30px;
+                border-radius: 30px;
+                border: solid 2px #E8272F;
+                padding: 0;
+                opacity: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.63px;
+                text-align: center;
+                color: #E8272F;
+            }
+        }
+    }
+}

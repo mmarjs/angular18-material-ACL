@@ -1,0 +1,189 @@
+.hero-banner-section {
+    position: relative;
+    background-color: #F2F2F2;
+    @media (min-width: 992px) {
+        background-color: #FFF;
+    }
+    .mob-short-menu {
+        max-width: 100vw;
+        width: 100%;
+        overflow: scroll;
+        height: 57px;
+        background: linear-gradient(90deg, #015585 0%, #00141F 100%);
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        list-style: none;
+        margin: 0;
+        .menu-item {
+            margin: 0px 7px;
+            .menu-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 29px;
+                width: max-content;
+                padding: 0 16px;
+                background-color: #017DC3;
+                box-shadow: 0px 0px 5px 0px #00000057;
+                border-radius: 0px;
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 14.62px;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+    .banner-img {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    .hero-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 992px) {
+            position: absolute;
+        }
+        .hero-text {
+            color: #000;
+            margin: 25px auto;
+            font-family: Exo 2;
+            font-size: 15.23px;
+            font-style: italic;
+            font-weight: 600;
+            line-height: 18.27px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            @media (min-width: 992px) {
+                margin: auto;
+                color: #fff;
+                font-size: 20px;
+                font-style: italic;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0.62em;
+                text-align: center;
+            }
+        }
+        .hero-carousel {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .hero-card {
+                width: 100%;
+                margin: 10px auto;
+                position: relative;
+                border-radius: 14px;
+                overflow: hidden;
+                @media (min-width: 576px) {
+                    width: 265px;
+                }
+                .hero-card-img {
+                    width: 100%;
+                    position: relative;
+                }
+                .card-content {
+                    position: absolute;
+                    color: #fff;
+                    padding: 40px 20px 30px;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .subline {
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-weight: 900;
+                        line-height: 20px;
+                        letter-spacing: -0.06em;
+                        text-align: left;
+                        margin: 0;
+                    }
+                    .headline {
+                        font-family: Montserrat;
+                        font-size: 38px;
+                        font-weight: 900;
+                        line-height: 38px;
+                        letter-spacing: -0.06em;
+                        text-align: left;
+                        margin: 0;
+                    }
+                    .card-items {
+                        list-style: none;
+                        margin: 40px 0 0 0;
+                        padding: 0;
+                        .card-item {
+                            max-width: max-content;
+                            border-bottom: solid 1px #fff;
+                            padding: 0;
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            .card-link {
+                                font-family: Exo 2;
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 19.2px;
+                                text-align: left;
+                                min-width: 165px;
+                                width: 182px;
+                                padding: 0;
+                                color: #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                .mat-icon {
+                                    color: #E8272F;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        font-family: Exo 2;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: -0.04em;
+                        text-align: left;
+                    }
+                    .card-button {
+                        position: relative;
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        margin-top: auto;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #E8272F;
+                        border-radius: 40px;
+                        font-family: Montserrat;
+                        color: #fff;
+                        border: none;
+                        outline: none;
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 17.07px;
+                        text-align: center;
+                        .mat-icon {
+                            font-size: 20px;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

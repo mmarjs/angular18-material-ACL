@@ -1,0 +1,12 @@
+<div class="lang-select">
+    <div class="selected-lang">
+        <img [src]="selectedLang.img" alt="US" />
+        {{ selectedLang.value }}
+        <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="keyboard_arrow_down"></mat-icon>
+    </div>
+    <ul class="lang-dropdown">
+        <li mat-button class="lang-option" *ngFor="let lang of langs" (click)="onSelectLang(lang)">
+            <img [src]="lang.img" alt="US" />{{ lang.value }}
+        </li>
+    </ul>
+</div>

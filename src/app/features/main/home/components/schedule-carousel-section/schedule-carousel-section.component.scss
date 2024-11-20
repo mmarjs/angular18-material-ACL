@@ -1,0 +1,157 @@
+.schedule-carousel-section {
+    padding: 40px 0;
+    background-color: #fff;
+    @media (min-width: 992px) {
+        padding: 60px 0;
+    }
+    .schedule-carousel-card {
+        background-color: #fff;
+        border-radius: 14px;
+        box-shadow: none;
+        @media (min-width: 992px) {
+            box-shadow: 0px 0px 35px 0px #00000024;
+        }
+        .schedules-block {
+            padding: 50px 0px;
+            @media (min-width: 992px) {
+                padding: 70px 90px;
+            }
+            .block-title {
+                display: flex;
+                flex-direction: column;
+                h6 {
+                    color: #E8272F;
+                    font-weight: bold;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 20px;
+                    letter-spacing: -0.06em;
+                    text-align: center;
+                    @media (min-width: 992px) {
+                        text-align: left;
+                    }
+                }
+                h2 {
+                    margin-top: 0;
+                    font-family: Montserrat;
+                    font-size: 44px;
+                    font-weight: 900;
+                    line-height: 38px;
+                    letter-spacing: -0.06em;
+                    text-align: center;
+                    @media (min-width: 992px) {
+                        text-align: left;
+                    }
+                }
+            }
+            .btn-full-schedules {
+                width: 220px;
+                height: 40px;
+                border-radius: 40px;
+                border: none;
+                outline: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #E8272F;
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 17.07px;
+                text-align: center;
+                margin-top: auto;
+                margin-left: auto;
+                margin-right: auto;
+                @media (min-width: 992px) {
+                    margin-left: auto;
+                    margin-right: 0px;
+                }
+                .mat-icon {
+                    font-size: 20px;
+                    margin-top: 2px;
+                }
+            }
+            .divider {
+                border-top: none;
+                @media (min-width: 992px) {
+                    border-top: solid 1px #D1D1D1;
+                }
+            }
+            .filter-options {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin-left: auto;
+                margin-right: auto;
+                @media (min-width: 992px) {
+                    margin-left: 0px;
+                }
+                .filter-item {
+                    margin-left: 8px;
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                    .filter-button {
+                        height: 35px;
+                        padding: 10px 20px 10px 20px;
+                        gap: 8px;
+                        border-radius: 100px 0px 0px 0px;
+                        border: solid 2px #000;
+                        border-radius: 35px;
+                        opacity: 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: Montserrat;
+                        font-size: 12px;
+                        font-weight: 700;
+                        line-height: 14.63px;
+                        text-align: center;
+                        color: #000;
+                        &.active {
+                            background-color: #000;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .block-body {
+                margin-left: -12px;
+                margin-right: -12px;
+                width: calc(100% + 24px);
+                max-width: calc(100% + 24px);
+                overflow: hidden;
+                @media (min-width: 992px) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .schedule-carousel {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 40px 20px 0px;
+                    transform: translateX(24px);
+                    @media (min-width: 992px) {
+                        transform: translateX(0px);
+                        padding: 40px 0px 0px;
+                    }
+                    .schedule-card {
+                        width: 220px;
+                        border-radius: 8px;
+                        overflow: hidden;
+                        .schedule-card-img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

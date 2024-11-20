@@ -1,0 +1,105 @@
+<div class="standing-section pb-5">
+    <div class="top-standing-block">
+        <div class="container">
+            <div class="block-body">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="block-text">
+                            <strong>2023-2024 SEASON </strong>
+                            <h2 class="mt-1 mb-2">TOP ACL STANDINGS</h2>
+                        </div>
+                    </div>
+                    <div class="col col-12 d-flex d-lg-none">
+                        <img class="logo mx-auto mb-3" src="assets/images/acl-logo2.png" alt="ACL" />
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                        <button mat-icon-button class="btn-all-standings">
+                            ALL STANDINGS
+                            <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="block-footer w-100 justify-content-end d-none d-lg-flex">Last Updated: Mar 14 4:31 am ET</div>
+        </div>
+    </div>
+    <div class="container pt-5">
+        <div class="standing-items" id="standing-carousel">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let slider of sliders">
+                    <li class="standing-item">
+                        <h6 class="item-title">{{slider.title}}</h6>
+                        <span>{{slider.subtitle}}</span>
+                        <table class="standing-table">
+                            <thead>
+                                <tr>
+                                    <th>RANK</th>
+                                    <th>PLAYER</th>
+                                    <th>POINTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Jhon Smith</td>
+                                    <td>2600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="btn-outline">{{slider.button.title}}</button>
+                    </li>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <button mat-icon-button class="btn-all-standings">
+            ALL STANDINGS
+            <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+        </button>
+        <div class="block-footer w-100 justify-content-center d-flex d-lg-none">Last Updated: Mar 14 4:31 am ET</div>
+    </div>
+</div>

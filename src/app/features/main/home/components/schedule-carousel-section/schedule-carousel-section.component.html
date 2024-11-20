@@ -1,0 +1,59 @@
+<div class="schedule-carousel-section">
+    <div class="container">
+        <mat-card class="schedule-carousel-card">
+            <div class="schedules-block">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="block-title">
+                            <h6>NEXT UP ON THE</h6>
+                            <h2>SCHEDULE</h2>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-6 d-none d-lg-flex">
+                        <button mat-icon-button class="btn-full-schedules mt-auto mb-3">
+                            FULL SCHEDULE
+                            <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row mt-4">
+                    <div class="col-12 d-flex">
+                        <ul class="filter-options">
+                            <li class="filter-item">
+                                <a mat-stroked-button class="filter-button active">ALL</a>
+                            </li>
+                            <li class="filter-item">
+                                <a mat-stroked-button class="filter-button">PRO</a>
+                            </li>
+                            <li class="filter-item">
+                                <a mat-stroked-button class="filter-button">OPEN</a>
+                            </li>
+                            <li class="filter-item">
+                                <a mat-stroked-button class="filter-button">GLOBAL</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-body">
+                    <div class="schedule-carousel" id="schedule-carousel">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-template carouselSlide *ngFor="let slider of sliders">
+                                <mat-card class="schedule-card" [id]="123">
+                                    <img matCardImage [src]="slider" class="schedule-card-img">
+                                </mat-card>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 d-flex d-lg-none">
+                    <button mat-icon-button class="btn-full-schedules mt-auto mb-3">
+                        FULL SCHEDULE
+                        <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+                    </button>
+                </div>
+            </div>
+            <!--  -->
+        </mat-card>
+    </div>
+</div>

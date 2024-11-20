@@ -1,0 +1,114 @@
+<div class="blog-carousel-section">
+    <mat-card class="blog-carousel-card">
+        <div class="container">
+            <div class="blogs-block">
+                <div class="row">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-8">
+                        <h2>MORE FROM THE ACL</h2>
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-4 d-flex">
+                        <button mat-icon-button class="btn-all-posts">
+                            ALL POSTS
+                            <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+                        </button>
+                    </div>
+                </div>
+                <div class="divider mt-2 d-none d-lg-block"></div>
+                <div class="block-body">
+                    <h5 class="block-title mt-5">FEATURED</h5>
+                    <div class="blog-carousel mt-4" id="blog-carousel">
+                        <owl-carousel-o [options]="customOptions">
+                            <ng-template carouselSlide *ngFor="let slider of sliders">
+                                <mat-card class="blog-card">
+                                    <img matCardImage [src]="slider.img" class="blog-card-img">
+                                    <mat-card-content class="blog-card-content">
+                                        <div class="timestamp">{{slider.date}}</div>
+                                        <div class="title">{{slider.title}}</div>
+                                    </mat-card-content>
+                                    <mat-card-footer class="blog-card-footer">
+                                        <button mat-button class="btn-read-more">
+                                            READ MORE
+                                        </button>
+                                    </mat-card-footer>
+                                </mat-card>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <div class="row mt-5">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="news-block">
+                        <h5 class="block-title">RECENT NEWS</h5>
+                        <ul class="news-items">
+                            <li class="news-item">
+                                <img class="news-img" src="assets/images/news.png" alt="news" />
+                                <div class="news-text">
+                                    <strong>2022-2023 ACL Open 12, Shootout 3 & 4, and SuperHole IV </strong>
+                                    <span>ACL PRO, Opens, News, FEATURED</span>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <img class="news-img" src="assets/images/news.png" alt="news" />
+                                <div class="news-text">
+                                    <strong>2022-2023 ACL Open 12, Shootout 3 & 4, and SuperHole IV </strong>
+                                    <span>ACL PRO, Opens, News, FEATURED</span>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <img class="news-img" src="assets/images/news.png" alt="news" />
+                                <div class="news-text">
+                                    <strong>2022-2023 ACL Open 12, Shootout 3 & 4, and SuperHole IV </strong>
+                                    <span>ACL PRO, Opens, News, FEATURED</span>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <img class="news-img" src="assets/images/news.png" alt="news" />
+                                <div class="news-text">
+                                    <strong>2022-2023 ACL Open 12, Shootout 3 & 4, and SuperHole IV </strong>
+                                    <span>ACL PRO, Opens, News, FEATURED</span>
+                                </div>
+                            </li>
+                            <button mat-stroked-button class="btn-view-all mx-auto mt-5 d-none d-lg-flex">VIEW ALL</button>
+                            <button mat-icon-button class="btn-all-posts mt-5 d-flex d-lg-none">
+                                ALL POSTS
+                                <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col col-12 px-0 pb-4 d-block d-lg-none">
+                    <hr />
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="video-block h-100">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h5 class="block-title m-0">VIDEO FAVS</h5>
+                            <a mat-button class="btn-yt-play">
+                                <img src="assets/icons/yt-play.png" alt="" />
+                                PLAY ALL
+                            </a>
+                        </div>
+                        <div class="video-items" id="video-carousel">
+                            <owl-carousel-o [options]="videoOptions">
+                                <ng-template carouselSlide *ngFor="let video of videos">
+                                    <div class="video-item">
+                                        <img class="video-img" [src]="video.thumbnail" alt="news" />
+                                        <div class="video-text">
+                                            <strong>{{video.title}}</strong>
+                                            <span>{{video.description}}</span>
+                                            <span>{{video.views}}</span>
+                                        </div>
+                                    </div>
+                                </ng-template>
+                            </owl-carousel-o>
+                        </div>
+                        <button mat-stroked-button class="btn-watch mx-auto mt-auto">WATCH ON YOUTUBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,90 @@
+.about-video-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    padding: 25px 0;
+    @media (min-width: 992px) {
+        padding: 140px 0;
+    }
+    // .video-block {
+
+    // }
+    .text-block {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 992px) {
+            max-width: 500px;
+        }
+        .topline {
+            color: #E8272F;
+            margin-bottom: 0;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 900;
+            line-height: 20px;
+            letter-spacing: -0.06em;
+            text-align: center;
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+        }
+        .headline {
+            color: #000;
+            margin-top: 0;
+            font-family: Montserrat;
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 38px;
+            letter-spacing: -0.06em;
+            text-align: center;
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+        }
+        .subline {
+            color: #000;
+            font-weight: bold;
+            font-family: Exo 2;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: -0.06em;
+            text-align: center;
+            @media (min-width: 992px) {
+                max-width: 470px;
+                text-align: left;
+            }
+        }
+        p {
+            color: #474747;
+        }
+        .btn-learn-more {
+            width: 220px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: #E8272F;
+            color: #fff;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17.07px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            @media (min-width: 992px) {
+                margin-left: 0;
+            }
+            .mat-icon {
+                font-size: 20px;
+                margin-top: 2px;
+            }
+        }
+    }
+}

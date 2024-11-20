@@ -1,0 +1,36 @@
+.sponsors-section {
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .section-title {
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 38px;
+        letter-spacing: -0.06em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .sponsors-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sponsor-card {
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            max-width: 170px;
+            width: 170px;
+            @media (min-width: 992px) {
+                max-width: 200px;
+                width: 200px;
+            }
+        }
+    }
+}

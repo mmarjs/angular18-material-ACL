@@ -1,0 +1,139 @@
+.download-app-section {
+    position: relative;
+    overflow: hidden;
+    .acl-software-block {
+        background-image: url('/assets/background/software-bg.png');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        overflow: hidden;
+        .acl-software-text {
+            padding: 0px 40px 50px;
+            @media (min-width: 992px) {
+                padding: 40px 0px 0px;
+            }
+            h1 {
+                color: #fff;
+                max-width: 524px;
+                font-family: Montserrat;
+                font-size: 48px;
+                font-weight: 900;
+                line-height: 39px;
+                letter-spacing: -0.06em;
+                text-align: left;
+                .highlight {
+                    color: #E8272F;
+                }
+            }
+            p {
+                color: #B0B0B0;
+                max-width: 500px;
+                margin-bottom: 20px;
+                font-family: Exo 2;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -0.06em;
+                text-align: left;
+            }
+            .acl-exp-items {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                .acl-exp-item {
+                    display: flex;
+                    margin: 30px 0;
+                    .item-num {
+                        min-width: 32px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 100%;
+                        border: solid 1px #52A6F3;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                    }
+                    .item-text {
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        font-family: Exo 2;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: -0.02em;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .acl-software-img {
+            transform: translate(0px, -100px);
+        }
+    }
+    .acl-app-download-block {
+        background-image: url('/assets/background/app-download-bg.png');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        .cut-software-img {
+            width: 150px;
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+            top: -100px;
+            @media (min-width: 992px) {
+                bottom: -80px;
+                left: 50px;
+            }
+        }
+        .download-text {
+            margin-left: 200px;
+            height: 200px;
+            @media (min-width: 992px) {
+                height: auto;
+            }
+            strong {
+                color: #fff;
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: 900;
+                line-height: 28px;
+                letter-spacing: -0.06em;
+                text-align: left;
+                @media (min-width: 992px) {
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-weight: 900;
+                    line-height: 20px;
+                    letter-spacing: -0.06em;
+                    text-align: left;
+                }
+            }
+            p {
+                color: #E8272F;
+                font-family: Exo 2;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: left;
+                @media (min-width: 992px) {
+                    font-family: Exo 2;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: left;
+                }
+            }
+        }
+        .app-download-buttons {
+            display: flex;
+            flex-direction: row;
+            .download-link {
+                margin: 0px 10px;
+            }
+        }
+    }
+}

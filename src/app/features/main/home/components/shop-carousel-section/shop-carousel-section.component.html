@@ -1,0 +1,30 @@
+<div class="shop-carousel-section">
+    <div class="container">
+        <div class="row section-header">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-6 d-flex align-items-center">
+                <h2 class="section-title my-auto">SHOP CORNHOLE</h2>
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                <button mat-icon-button class="btn-shop-now">
+                    SHOP NOW
+                    <mat-icon class="ms-1" aria-hidden="false" aria-label="" fontIcon="arrow_forward"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="section-body mt-2 pt-5 pb-2">
+            <div class="shop-carousel" id="shop-carousel">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let slider of sliders">
+                        <mat-card class="shop-card">
+                            <img matCardImage [src]="slider.img" class="shop-card-img">
+                            <mat-card-content class="shop-card-content">
+                                <div class="title">{{slider.name}}</div>
+                                <div class="price">{{slider.price}}</div>
+                            </mat-card-content>
+                        </mat-card>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
